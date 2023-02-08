@@ -4,7 +4,6 @@ import pywhatkit as pwk
 
 gc = gspread.service_account(filename='credientials.json') #TODO:ADD_API_SERVICE_ACCOUNT_CREDIENTIALS
 gsheet = gc.open_by_url("{SHEET_URL}") #TODO:ADD SHEET_URL
-col_index = 3
 prev_list0 = gsheet.values_get("{COLUMN_INDEX}") #TODO:ADD_COLUMN_INDEXES(EXCEL FORMAT)
 prev_list = []
 i = 0
